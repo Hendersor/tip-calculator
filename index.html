@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip calculator</title>
+    <link rel="stylesheet" href="/styles/mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>SPLITTER</h1>
+   <main id="app">
+    <section class="bill">
+        <h1>bill</h1>
+        <input type="number">
+    </section>
+
+    <section class="tip">
+        <h1>Select Tip %</h1>
+        <button class="tipC">5%</button>
+        <button class="tipC">10%</button>
+        <button class="tipC">15%</button>
+        <button class="tipC">25%</button>
+        <button class="tipC">50%</button>
+
+        <input type="number" placeholder="Custom">
+    </section>
+
+    <section class="numberP">
+        <h1>Number of People</h1>
+        <input type="text">
+    </section>
+
+    <section class="check">
+        <div class="amount">
+            <h1>Tip Amount <br> <span>/ person</span></h1>
+            <p>$</p>
+        </div>
+
+        <div class="total">
+            <h1>Total <br> <span>/ person</span></h1>
+            <p>$</p>
+        </div>
+
+        <button>Reset</button>
+    </section>
+
+   </main>
     
+
 </body>
 </html>

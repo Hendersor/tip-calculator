@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --main: hsl(183, 100%, 15%);
+    --text: hsl(186, 14%, 43%);
+    --mainBack: hsl(185, 41%, 84%);
+    --inputsBack: hsl(189, 41%, 97%);
+    --calcBack: hsl(0, 0%, 100%);
+    --numbers: hsl(172, 67%, 45%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--mainBack);
+}
+
+.title-container{
+    width: 120px;
+    height: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+}
+
+body .title-container {
+    font-size: 2.9rem;
+    color: var(--main);
+    letter-spacing: 10px;
+}
+
+#app{
+    width: 100%;
+    background-color: var(--calcBack);
+    border-radius: 15px 15px 0 0;
+    padding: 30px;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bill{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80px;
+    justify-content: space-between;
+}
+
+ section h1{
+    color: var(--text);
+    font-size: 1.8rem;
+    justify-self: flex-start;
+    text-align: start;
+}
+
+.bill .input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: var(--inputsBack);
+    color: var(--main);
+    border-radius: 2px;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.tip{
+    width: 100%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tip .buttons{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.buttons .tipC{
+    width: 160px;
+    height: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+    border: none;
+    color: var(--calcBack);
+    background-color: var(--main);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons :hover{
+    background-color: var(--numbers);
+    color: var(--main);
+}
+
+.buttons :last-child{
+    background-color: var(--inputsBack);
+}
+
+
+.numberP{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.numberP .input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: var(--inputsBack);
+    color: var(--main);
+    border-radius: 2px;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.check{
+    background-color: var(--main);
+    border-radius: 10px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.check .amount, .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.check .amount h2,
+.check .total h2{
+    color: var(--calcBack);
+    font-size: 1.7rem;
+}
+
+.check .amount span,
+.check .total span{
+    color: var(--text);
+    font-size: 1.4rem;
+}
+
+.check .amount p,
+.check .total p{
+    font-size: 3.5rem;
+    color: var(--numbers);
+}
+
+.check button{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--numbers);
+    font-size: 2.1rem;
+    color: var(--main);
+}

@@ -12,42 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>SPLITTER</h1>
+    <div class="title-container">
+        <p class="title">S</p>
+        <P class="title">P</P>
+        <P class="title">L</P>
+        <P class="title">I</P>
+        <P class="title">T</P>
+        <P class="title">T</P>
+        <P class="title">E</P>
+        <P class="title">R</P>
+    </div>
    <main id="app">
-    <section class="bill">
-        <h1>bill</h1>
-        <input type="number">
-    </section>
+        <section class="bill">
+            <h1>Bill</h1>
+            <input class="input" type="number">
+        </section>
 
-    <section class="tip">
-        <h1>Select Tip %</h1>
-        <button class="tipC">5%</button>
-        <button class="tipC">10%</button>
-        <button class="tipC">15%</button>
-        <button class="tipC">25%</button>
-        <button class="tipC">50%</button>
 
-        <input type="number" placeholder="Custom">
-    </section>
+        <section class="tip">
+            <h1>Select Tip %</h1>
+            <div class="buttons">
+                <button class="tipC">5%</button>
+                <button class="tipC">10%</button>
+                <button class="tipC">15%</button>
+                <button class="tipC">25%</button>
+                <button class="tipC">50%</button>
+                <input class="tipC" type="number" placeholder="Custom">
+            </div>
 
-    <section class="numberP">
-        <h1>Number of People</h1>
-        <input type="text">
-    </section>
+        </section>
 
-    <section class="check">
-        <div class="amount">
-            <h1>Tip Amount <br> <span>/ person</span></h1>
-            <p>$</p>
-        </div>
+        <section class="numberP">
+            <h1>Number of People</h1>
+            <input class="input" type="text">
+        </section>
 
-        <div class="total">
-            <h1>Total <br> <span>/ person</span></h1>
-            <p>$</p>
-        </div>
+        <section class="check">
+            <div class="amount">
+                <h2>Tip Amount <br> <span>/ person</span></h2>
+                <p></p>
+            </div>
 
-        <button>Reset</button>
-    </section>
+            <div class="total">
+                <h2>Total <br> <span>/ person</span></h2>
+                <p></p>
+            </div>
+
+            <button>RESET</button>
+        </section>
 
    </main>
     

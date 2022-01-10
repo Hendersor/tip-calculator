@@ -73,7 +73,28 @@ body .title-container {
     border-radius: 2px;
     font-size: 2.5rem;
     text-align: right;
+    border: none;
 }
+.input:focus, .tipC:focus{
+    outline: none;
+}
+
+.billC{
+    background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1641849014/tip-calculator-app-main/images/icon-dollar_fhcxsp.svg");
+}
+
+.peopleC{
+    background-image: url("https://res.cloudinary.com/dwdz4mn27/image/upload/v1641849014/tip-calculator-app-main/images/icon-person_ub2aqv.svg");
+}
+
+.billC, .peopleC{
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    height: 100%;
+}
+
+
 
 .tip{
     width: 100%;
@@ -91,8 +112,9 @@ body .title-container {
     justify-content: space-between;
 }
 
+
 .buttons .tipC{
-    width: 160px;
+    width: 170px;
     height: 50px;
     font-size: 2.5rem;
     text-align: center;
@@ -102,6 +124,8 @@ body .title-container {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
 
 .buttons :hover{
     background-color: var(--numbers);
@@ -172,4 +196,20 @@ body .title-container {
     background-color: var(--numbers);
     font-size: 2.1rem;
     color: var(--main);
+}
+
+@media screen and (max-width: 424px) {
+    .tip .buttons .tipC{
+        width: 150px;
+
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+
+    .tip .buttons .tipC{
+        width: 125px;
+    }
+ 
 }

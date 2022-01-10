@@ -49,12 +49,21 @@ body .title-container {
     justify-content: space-between;
 }
 
+.first-part{
+    height: 464px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .bill{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     height: 80px;
     justify-content: space-between;
+    align-self: flex-start;
 }
 
  section h1{
@@ -126,7 +135,6 @@ body .title-container {
 }
 
 
-
 .buttons :hover{
     background-color: var(--numbers);
     color: var(--main);
@@ -142,6 +150,7 @@ body .title-container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    align-self: flex-start;
 }
 
 .numberP .input{
@@ -196,6 +205,7 @@ body .title-container {
     background-color: var(--numbers);
     font-size: 2.1rem;
     color: var(--main);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 424px) {
@@ -211,5 +221,12 @@ body .title-container {
     .tip .buttons .tipC{
         width: 125px;
     }
- 
 }
+
+@media screen and (min-width: 768px){
+    .check button{
+        width: 50%;
+        align-self: center;
+    }
+}
+

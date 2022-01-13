@@ -1,0 +1,38 @@
+#app{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 90%;
+     height: 425px;
+     border-radius: 20px;
+     margin: 0 auto;
+}
+
+
+.first-part{
+     height: 100%;
+     width: 45%;
+}
+
+.bill{
+     justify-content: center;
+     height: 70px;
+}
+
+.tip{
+     justify-content: center;
+}
+
+.numberP{
+     justify-content: center;
+}
+
+.check{
+     width: 45%;
+     height: 100%;
+}
+
+.check button{
+     width: 100%;
+}
+

@@ -15,7 +15,9 @@ let finalBill;
 billContainer.addEventListener('input', getBillValue);
 function getBillValue(){
      billValue = billContainer.value
-     getTip()
+     if(tipValue > 0 && peopleValue > 0 && billValue > 0){
+          getTip();
+     }
 }
 
 tipList.forEach(i => {
@@ -32,7 +34,12 @@ function getTipValue(e){
                tipValue = parseFloat(tipValue / 100);
           }
      })
-     getTip()
+     if(tipValue > 0 && peopleValue > 0 && billValue > 0){
+          getTip();
+     }else{
+          totalBill.innerText = "$00.0";
+          tipContainer.innerText = "$00.0";
+     }
 }
 
 customTip.addEventListener('input', getCustomTip);
@@ -45,21 +52,26 @@ function getCustomTip(){
 peopleContainer.addEventListener('input', getPeopleValue);
 function getPeopleValue(){
      peopleValue = peopleContainer.value;
-     getTip();
+     if(tipValue > 0 && peopleValue > 0 && billValue > 0){
+          getTip();
+     }else{
+          totalBill.innerText = "$00.0";
+          tipContainer.innerText = "$00.0";
+     }
 }
 
 
 function getTip(){
      finalTipValue = (billValue / peopleValue) * tipValue
      finalBill = (billValue / peopleValue) + finalTipValue; 
-     console.log(tipValue, billValue, peopleValue)
      tipContainer.innerText = parseFloat(finalTipValue).toFixed(2);
      totalBill.innerText = parseFloat(finalBill).toFixed(2);
 }
 
 
 function getTip2(){
-     tipValue = (billValue / peopleValue) * (parseInt(customTipValue) / 100)
-     tipValue.toFixed(2);
-     tipContainer.innerText = tipValue;
+     finalTipValue = (billValue / peopleValue) * customTipValue;
+     finalBill = (billValue / peopleValue) + finalTipValue; 
+     tipContainer.innerText = parseFloat(finalTipValue).toFixed(2);
+     totalBill.innerText = parseFloat(finalBill).toFixed(2);
 }

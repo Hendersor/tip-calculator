@@ -131,6 +131,7 @@ border: none;
 font-size: 2.5em;
 width: 170px;
 text-align: right;
+color: var(--main);
 }
 
 .tip .buttons{
